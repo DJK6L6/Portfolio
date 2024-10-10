@@ -1,0 +1,205 @@
+/* Resetowanie domyślnych styli */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    /* Ciemne tło */
+    color: #ddd;
+    /* Jasny tekst */
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+    position: relative;
+    /* Umożliwienie pozycjonowania ramki */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #00bfa5;
+}
+
+/* Styl aktywnego linku */
+header nav ul li a.active {
+    color: #00bfa5;
+    border-bottom: 2px solid #00bfa5;
+    /* Dolna ramka dla aktywnego linku */
+    padding-bottom: 5px;
+    /* Dodajemy trochę przestrzeni dla ramki */
+}
+
+/* Sekcja - ukryta do momentu wyświetlenia */
+.content-section {
+    overflow: hidden;
+    /* Ukrywanie zawartości, która wykracza poza sekcję */
+    max-height: 0;
+    transition: max-height 0.6s ease;
+    /* Animacja maksymalnej wysokości */
+    margin: 20px 0;
+    padding: 0 20px;
+    background-color: #333;
+    /* Ciemne tło dla sekcji */
+    border-radius: 8px;
+    /* Zaokrąglone rogi */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    /* Cień dla efektu głębi */
+}
+
+.about-content {
+    display: flex;
+    /* Ustawiamy elastyczny układ */
+    align-items: center;
+    /* Wyśrodkowanie w pionie */
+    padding: 20px;
+    /* Padding wewnętrzny */
+}
+
+.about-image {
+    width: 150px;
+    /* Szerokość zdjęcia */
+    height: auto;
+    /* Automatyczna wysokość */
+    border-radius: 75px;
+    /* Zaokrąglenie zdjęcia */
+    margin-right: 20px;
+    /* Odstęp od tekstu */
+}
+
+.about-text {
+    flex: 1;
+    /* Pozwól tekstowi zajmować pozostałą przestrzeń */
+}
+
+/* Umiejętności - karty */
+.skills-container {
+    display: flex;
+    /* Elastyczny układ */
+    flex-wrap: wrap;
+    /* Zawijanie wierszy */
+    justify-content: space-around;
+    /* Równomierne rozmieszczenie */
+}
+
+.skill-card {
+    background-color: #444;
+    /* Ciemne tło karty */
+    border-radius: 8px;
+    /* Zaokrąglone rogi */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    /* Cień */
+    margin: 10px;
+    padding: 20px;
+    /* Padding wewnętrzny */
+    text-align: center;
+    /* Wyśrodkowanie tekstu */
+    transition: transform 0.3s ease;
+    /* Animacja dla efektu hover */
+    color: #fff;
+    /* Kolor tekstu */
+    width: 180px;
+    /* Stała szerokość dla kart */
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    /* Efekt unoszenia */
+}
+
+.skill-card h3 {
+    margin-bottom: 10px;
+    /* Odstęp dolny */
+    color: #fff;
+    /* Kolor nagłówka */
+}
+
+.skill-card i {
+    font-size: 40px;
+    /* Rozmiar ikony */
+    color: #00bfa5;
+    /* Kolor ikony */
+    margin-bottom: 10px;
+    /* Odstęp dolny */
+}
+
+/* Projekty - karty */
+.projects-container {
+    display: flex;
+    /* Elastyczny układ */
+    flex-wrap: wrap;
+    /* Zawijanie wierszy */
+    justify-content: space-around;
+    /* Równomierne rozmieszczenie */
+}
+
+.project-card {
+    background-color: #444;
+    /* Ciemne tło karty */
+    border-radius: 8px;
+    /* Zaokrąglone rogi */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    /* Cień */
+    margin: 10px;
+    /* Odstęp między kartami */
+    padding: 20px;
+    /* Padding wewnętrzny */
+    text-align: center;
+    /* Wyśrodkowanie tekstu */
+    transition: transform 0.3s ease;
+    /* Animacja dla efektu hover */
+    color: #fff;
+    /* Kolor tekstu */
+    width: 180px;
+    /* Stała szerokość dla kart */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    /* Efekt powiększenia */
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    /* Odstęp dolny */
+}
+
+.project-card a {
+    color: #00bfa5;
+    /* Kolor linku */
+    text-decoration: none;
+    /* Brak podkreślenia */
+    transition: color 0.3s ease;
+    /* Animacja koloru linku */
+}
+
+.project-card a:hover {
+    color: #00a08a;
+    /* Zmiana koloru linku na hover */
+}
