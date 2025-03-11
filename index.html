@@ -6,32 +6,46 @@
     <title>Portfolio Programisty Java</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- FontAwesome Icons -->
+    <link rel="icon" href="1.png" type="png">
 </head>
 <body>
-
     <header>
-        <h1>Portfolio Java Developer</h1>
         <nav>
-            <ul>
-                <li><a href="#about" class="active">O mnie</a></li>
-                <li><a href="#skills">Umiejętności</a></li>
-                <li><a href="#projects">Projekty</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="logo">Jakub Hamerski</div>
+                <ul>
+                    <li><a href="#about">O mnie</a></li>
+                    <li><a href="#skills">Umiejętności</a></li>
+                    <li><a href="#projects">Projekty</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <!-- Sekcje, które będą się wysuwać po kliknięciu -->
+    <section id="intro">
+        <div class="intro-content">
+            <h1><span class="highlight">JAVA</span> DEVELOPER</h1>
+            <p>Cześć! Nazywam się Jakub i jestem programistą Java z pasją do tworzenia wydajnych oraz
+                skalowalnych aplikacji. Dążę do nieustannego rozwoju&nbsp;i&nbsp;doskonalenia swoich umiejętności, a
+                największą
+                satysfakcję czerpię z rozwiązywania problemów technicznych.</p>
+            <a href="#projects" class="view-projects-btn">Zobacz moje projekty</a>
+        </div>
+        <div class="intro-image">
+            <img src="https://static.vecteezy.com/system/resources/previews/026/630/551/non_2x/profile-icon-symbol-design-illustration-vector.jpg"
+                alt="Jakub Hamerski">
+        </div>
+    </section>
+
     <section id="about" class="content-section">
         <div class="about-content">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwyXeKDN29AmZgZPLS7n0Bepe8QmVappBwZCeA3XWEbWNdiDFB"
-                alt="Moje zdjęcie" class="about-image">
             <div class="about-text">
                 <h2>O mnie</h2>
-                <p>Cześć! Jestem programistą Java. Jestem zaangażowany w rozwój aplikacji webowych i backendowych.
-                    Zawsze staram się dostarczać wysokiej jakości kod, a także jestem otwarty na nowe wyzwania i
-                    technologie.</p>
-                <p>Moje podejście do pracy opiera się na zaangażowaniu i ciągłym rozwoju umiejętności.</p>
+                <p>Jestem początkującym programistą Java, koncentrującym się na tworzeniu aplikacji webowych oraz
+                    backendowych. Staram się pisać czysty&nbsp;i&nbsp;czytelny kod, zgodny z najlepszymi praktykami.
+                    Jestem otwarty na nowe wyzwania i technologie, a moje podejście do pracy opiera się na
+                    zaangażowaniu, systematycznej nauce i poszerzaniu kompetencji.</p>
             </div>
         </div>
     </section>
@@ -45,14 +59,29 @@
                 <p>Doświadczenie w Spring, Hibernate.</p>
             </div>
             <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>SQL</h3>
-                <p>Praca z MySQL i PostgreSQL.</p>
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Aplikacje Mobilne</h3>
+                <p>Android SDK, Jetpack Compose, podstawy Kotlina.</p>
             </div>
             <div class="skill-card">
-                <i class="fab fa-git"></i>
+                <i class="fas fa-leaf"></i>
+                <h3>Spring Boot</h3>
+                <p>Tworzenie aplikacji webowych&nbsp;i&nbsp;REST API.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>SQL & NoSQL</h3>
+                <p>MySQL, PostgreSQL.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-docker"></i>
+                <h3>Docker</h3>
+                <p>Konteneryzacja aplikacji&nbsp;i&nbsp;zarządzanie obrazami.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
                 <h3>Git & GitHub</h3>
-                <p>Zarządzanie wersjami w projektach.</p>
+                <p>Kontrola wersji&nbsp;i&nbsp;współpraca zespołowa.</p>
             </div>
         </div>
     </section>
@@ -61,68 +90,97 @@
         <h2>Projekty</h2>
         <div class="projects-container">
             <div class="project-card">
-                <h3>Nazwa Projektu 1</h3>
-                <p>Opis projektu z użyciem Java, Springa i baz danych.</p>
-                <a href="https://github.com/twojeportfolio/projekt1" target="_blank">Zobacz na GitHubie</a>
+                <h3>Mobilna Aplikacja do Wynajmu Samochodów</h3>
+                <p>Mobilna aplikacja napisana w Javie, umożliwiająca wynajem samochodów. Wykorzystuje bazę danych do
+                    przechowywania informacji o dostępnych samochodach, użytkownikach i transakcjach. Aplikacja zawiera
+                    funkcje rejestracji, logowania i wynajmu pojazdów z możliwością płatności online.</p>
+                <a href="https://github.com/" target="_blank">Zobacz na GitHubie</a>
             </div>
             <div class="project-card">
-                <h3>Nazwa Projektu 2</h3>
-                <p>Krótki opis drugiego projektu.</p>
-                <a href="https://github.com/twojeportfolio/projekt2" target="_blank">Zobacz na GitHubie</a>
+                <h3>Algorytm Hashujący z Nonce</h3>
+                <p>Aplikacja w Javie, która generuje 5 obiektów typu `Transaction`, gdzie dla każdego obiektu znajduje
+                    się odpowiednia wartość `nonce` umożliwiająca wygenerowanie hasha, który kończy się pięcioma zerami.
+                    Algorytm implementuje wstrzykiwanie zależności oraz odpowiednie manipulowanie wartościami do
+                    obliczeń.</p>
+                <a href="https://github.com/" target="_blank">Zobacz na GitHubie</a>
             </div>
             <div class="project-card">
-                <h3>Nazwa Projektu 3</h3>
-                <p>Opis trzeciego projektu, który ilustruje moje umiejętności programistyczne.</p>
-                <a href="https://github.com/twojeportfolio/projekt3" target="_blank">Zobacz na GitHubie</a>
+                <h3>Sklep Terminalowy</h3>
+                <p>Prosta aplikacja sklepowa napisana w Javie, działająca w terminalu. Obsługuje rejestrację
+                    użytkowników, logowanie, hashowanie haseł, oraz proces zakupu produktów. Zintegrowana z bazą danych,
+                    umożliwia dodawanie produktów do koszyka i realizowanie zamówień.</p>
+                <a href="https://github.com/" target="_blank">Zobacz na GitHubie</a>
+            </div>
+            <div class="project-card">
+                <h3>Programowanie Współbieżne w Javie</h3>
+                <p>System współbieżny w Javie, rozwiązywał problemy synchronizacji wielu wątków. Wykorzystano klasy
+                    takie jak `Thread`, `Semaphore`, `Lock`, a także `ForkJoinPool` do równoległego przetwarzania
+                    danych. Program implementował semafory i mechanizmy blokowania w celu synchronizacji wątków.</p>
+                <a href="https://github.com/" target="_blank">Zobacz na GitHubie</a>
+            </div>
+            <div class="project-card">
+                <h3>Zaawansowane Operacje na Kolekcjach w Javie</h3>
+                <p>Program wykorzystujący strumienie w Javie do zaawansowanych operacji na kolekcjach. Wykonuje operacje
+                    takie jak filtrowanie, mapowanie i grupowanie dużych zbiorów danych, przy użyciu funkcji
+                    agregujących takich jak `Collectors.toMap()` czy `groupingBy()`.</p>
+                <a href="https://github.com/" target="_blank">Zobacz na GitHubie</a>
+            </div>
+            <div class="project-card">
+                <h3>Programowanie Asynchroniczne w Javie</h3>
+                <p>Aplikacja realizująca zadania asynchroniczne przy użyciu `Callable` i `Future`. Projekt pozwalał na
+                    równoległe przetwarzanie wielu zadań bez blokowania głównego wątku aplikacji. Wykorzystano
+                    `ExecutorService` do uruchamiania asynchronicznych zadań oraz obsługę błędów.</p>
+                <a href="https://github.com/" target="_blank">Zobacz na GitHubie</a>
+            </div>
+            <div class="project-card">
+                <h3>Rozwiązywanie Klasycznych Problemów Algorytmicznych</h3>
+                <p>Implementacja klasycznych problemów współbieżności, takich jak Problem Pięciu Filozofów. Zastosowano
+                    semafory i zamki do synchronizacji dostępu do zasobów. Projekt skupiał się na rozwiązywaniu
+                    problemów zakleszczenia i optymalizacji dostępu do współdzielonych zasobów.</p>
+                <a href="https://github.com/" target="_blank">Zobacz na GitHubie</a>
+            </div>
+            <div class="project-card">
+                <h3>Zastosowanie Wzorca Projektowego Builder w Javie</h3>
+                <p>Projekt, który wykorzystuje wzorzec projektowy Builder do tworzenia złożonych obiektów, takich jak
+                    komputery o różnych specyfikacjach (procesor, pamięć, dysk). Program stosuje fluent API do
+                    konfiguracji obiektów oraz integrację z testami jednostkowymi.</p>
+                <a href="https://github.com/" target="_blank">Zobacz na GitHubie</a>
+            </div>
+            <div class="project-card">
+                <h3>Zaawansowane Struktury Danych w Javie</h3>
+                <p>Projekt implementujący niestandardowe struktury danych w Javie, takie jak lista z zamkiem (lock list)
+                    do synchronizacji dostępu w aplikacjach wielowątkowych. Zastosowano drobnoziarniste blokowanie w
+                    celu poprawy wydajności przy przetwarzaniu współdzielonych danych.</p>
+                <a href="https://github.com/" target="_blank">Zobacz na GitHubie</a>
+            </div>
+            <div class="project-card">
+                <h3>Testowanie i Pomiar Wydajności w Programach Współbieżnych</h3>
+                <p>System monitorujący czas wykonania różnych algorytmów współbieżnych w Javie. Aplikacja umożliwia
+                    pomiar efektywności algorytmów przy różnych liczbach wątków oraz przetwarza duże zbiory danych,
+                    analizując wydajność systemu przy różnych scenariuszach obciążenia.</p>
+                <a href="https://github.com/" target="_blank">Zobacz na GitHubie</a>
             </div>
         </div>
     </section>
 
-    <!-- Skrypt do płynnego wysuwania -->
-    <script>
-        // Ukrywamy wszystkie sekcje na początku oprócz "O mnie"
-        document.querySelectorAll('.content-section').forEach((section) => {
-            section.style.display = 'none'; // Sekcje są ukryte
-        });
-
-        // Ustawiamy widoczność sekcji "O mnie" na starcie
-        const aboutSection = document.querySelector('#about');
-        aboutSection.style.display = 'block'; // Wyświetlamy sekcję "O mnie"
-        aboutSection.style.maxHeight = '0'; // Ustawiamy początkową wysokość na 0
-
-        // Po dodaniu niewielkiego opóźnienia, animujemy wysokość
-        setTimeout(() => {
-            aboutSection.style.maxHeight = aboutSection.scrollHeight + 'px'; // Ustawiamy właściwą wysokość na podstawie zawartości
-        }, 10);
-
-        // Dodajemy nasłuchiwanie na linki menu
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                // Ukrywamy wszystkie sekcje
-                document.querySelectorAll('.content-section').forEach((section) => {
-                    section.style.display = 'none';
-                });
-
-                // Pobieramy sekcję do wyświetlenia
-                const targetSection = document.querySelector(this.getAttribute('href'));
-
-                // Płynnie ją wysuwamy
-                targetSection.style.display = 'block';
-                targetSection.style.maxHeight = '0';  // Ustawiamy początkową wysokość na 0
-                setTimeout(() => {
-                    targetSection.style.maxHeight = targetSection.scrollHeight + 'px';  // Ustawiamy właściwą wysokość na podstawie zawartości
-                }, 10);  // Dodajemy małe opóźnienie dla animacji
-
-                // Aktywacja elementu menu
-                document.querySelectorAll('nav ul li a').forEach(link => {
-                    link.classList.remove('active'); // Usuwamy klasę aktywną ze wszystkich linków
-                });
-                this.classList.add('active'); // Dodajemy klasę aktywną do klikniętego linku
-            });
-        });
-    </script>
-
+    <section id="contact" class="content-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Kontakt</h2>
+                <p><i class="fas fa-envelope"></i> email@email.com</p>
+                <p><i class="fas fa-phone"></i> +48 123 456 789</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <input type="text" placeholder="Imię" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Wiadomość" rows="4" required></textarea>
+                <button>Wyślij</button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

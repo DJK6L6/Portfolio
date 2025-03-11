@@ -1,205 +1,253 @@
-/* Resetowanie domyślnych styli */
-* {
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #111723;
+    color: #ffffff;
+}
+
+/* Nagłówek */
+header {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px 30px;
+    position: fixed;
+    width: 80%;
+    max-width: 1100px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* Kontener nawigacji */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Menu nawigacyjne */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1c1c1c;
-    /* Ciemne tło */
-    color: #ddd;
-    /* Jasny tekst */
-    line-height: 1.6;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-header {
-    background-color: #111;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin-bottom: 10px;
-}
-
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-    position: relative;
-    /* Umożliwienie pozycjonowania ramki */
-}
-
-header nav ul li a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
-    transition: color 0.3s ease;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
-header nav ul li a:hover {
-    color: #00bfa5;
+nav ul li a:hover,
+nav ul li a.active {
+    color: #00aaff;
 }
 
-/* Styl aktywnego linku */
-header nav ul li a.active {
-    color: #00bfa5;
-    border-bottom: 2px solid #00bfa5;
-    /* Dolna ramka dla aktywnego linku */
-    padding-bottom: 5px;
-    /* Dodajemy trochę przestrzeni dla ramki */
-}
-
-/* Sekcja - ukryta do momentu wyświetlenia */
-.content-section {
-    overflow: hidden;
-    /* Ukrywanie zawartości, która wykracza poza sekcję */
-    max-height: 0;
-    transition: max-height 0.6s ease;
-    /* Animacja maksymalnej wysokości */
-    margin: 20px 0;
-    padding: 0 20px;
-    background-color: #333;
-    /* Ciemne tło dla sekcji */
-    border-radius: 8px;
-    /* Zaokrąglone rogi */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    /* Cień dla efektu głębi */
-}
-
-.about-content {
+/* Sekcja intro */
+#intro {
     display: flex;
-    /* Ustawiamy elastyczny układ */
+    justify-content: center;
     align-items: center;
-    /* Wyśrodkowanie w pionie */
-    padding: 20px;
-    /* Padding wewnętrzny */
+    height: 90vh;
+    text-align: left;
+    padding: 50px;
+    background: radial-gradient(circle at top left, #003300, #0a0a0a);
+    gap: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.about-image {
-    width: 150px;
-    /* Szerokość zdjęcia */
-    height: auto;
-    /* Automatyczna wysokość */
-    border-radius: 75px;
-    /* Zaokrąglenie zdjęcia */
-    margin-right: 20px;
-    /* Odstęp od tekstu */
+.intro-content {
+    max-width: 600px;
 }
 
-.about-text {
-    flex: 1;
-    /* Pozwól tekstowi zajmować pozostałą przestrzeń */
+.intro-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00ff00, #008800);
+    background-clip: text;
+    color: transparent;
 }
 
-/* Umiejętności - karty */
-.skills-container {
-    display: flex;
-    /* Elastyczny układ */
-    flex-wrap: wrap;
-    /* Zawijanie wierszy */
-    justify-content: space-around;
-    /* Równomierne rozmieszczenie */
+.intro-content p {
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 25px;
 }
 
-.skill-card {
-    background-color: #444;
-    /* Ciemne tło karty */
-    border-radius: 8px;
-    /* Zaokrąglone rogi */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    /* Cień */
-    margin: 10px;
-    padding: 20px;
-    /* Padding wewnętrzny */
+/* Przycisk */
+.view-projects-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(90deg, #00ff00, #008800);
+    border-radius: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.view-projects-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ff00;
+}
+
+/* Zdjęcie w sekcji intro */
+.intro-image img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #00ff00;
+}
+
+/* Sekcje */
+.content-section {
+    padding: 80px 10%;
     text-align: center;
-    /* Wyśrodkowanie tekstu */
-    transition: transform 0.3s ease;
-    /* Animacja dla efektu hover */
-    color: #fff;
-    /* Kolor tekstu */
-    width: 180px;
-    /* Stała szerokość dla kart */
 }
 
-.skill-card:hover {
-    transform: translateY(-10px);
-    /* Efekt unoszenia */
+h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #00ff00;
 }
 
-.skill-card h3 {
-    margin-bottom: 10px;
-    /* Odstęp dolny */
-    color: #fff;
-    /* Kolor nagłówka */
+/* Umiejętności */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
 }
 
-.skill-card i {
-    font-size: 40px;
-    /* Rozmiar ikony */
-    color: #00bfa5;
-    /* Kolor ikony */
-    margin-bottom: 10px;
-    /* Odstęp dolny */
+.skill-card,
+.project-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Projekty - karty */
+.skill-card:hover,
+.project-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ff00;
+}
+
+/* Projekty */
 .projects-container {
-    display: flex;
-    /* Elastyczny układ */
-    flex-wrap: wrap;
-    /* Zawijanie wierszy */
-    justify-content: space-around;
-    /* Równomierne rozmieszczenie */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
 }
 
 .project-card {
-    background-color: #444;
-    /* Ciemne tło karty */
-    border-radius: 8px;
-    /* Zaokrąglone rogi */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    /* Cień */
-    margin: 10px;
-    /* Odstęp między kartami */
+    background: #111;
     padding: 20px;
-    /* Padding wewnętrzny */
-    text-align: center;
-    /* Wyśrodkowanie tekstu */
-    transition: transform 0.3s ease;
-    /* Animacja dla efektu hover */
-    color: #fff;
-    /* Kolor tekstu */
-    width: 180px;
-    /* Stała szerokość dla kart */
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
-    transform: scale(1.05);
-    /* Efekt powiększenia */
-}
-
-.project-card h3 {
-    margin-bottom: 10px;
-    /* Odstęp dolny */
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ff00;
 }
 
 .project-card a {
-    color: #00bfa5;
-    /* Kolor linku */
+    display: block;
+    margin-top: 10px;
+    color: #00ff00;
     text-decoration: none;
-    /* Brak podkreślenia */
-    transition: color 0.3s ease;
-    /* Animacja koloru linku */
 }
 
-.project-card a:hover {
-    color: #00a08a;
-    /* Zmiana koloru linku na hover */
+/* Kontakt */
+.contact-container {
+    display: flex;
+    gap: 50px;
+    background: #131720;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.2);
+    max-width: 800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.contact-info {
+    width: 300px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    color: #00ff00;
+    font-size: 24px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00aaff;
+}
+
+/* Formularz kontaktowy */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: #131720;
+    color: white;
+    resize: none;
+    font-size: 16px;
+}
+
+/* Przycisk formularza */
+.contact-form button {
+    background: linear-gradient(90deg, #00ff00, #008800);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ff00;
 }
