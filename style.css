@@ -72,6 +72,7 @@ nav ul li a.active {
 
 .intro-content {
     max-width: 600px;
+    margin-right: 50px;
 }
 
 .intro-content h1 {
@@ -127,54 +128,163 @@ h2 {
     color: #00ff00;
 }
 
+/* O mnie */
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #00ff00;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.8;
+    text-align: left;
+    margin-bottom: 25px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Umiejętności */
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    width: 100%;
 }
 
-.skill-card,
-.project-card {
+.skills-container h2 {
+    margin-top: 50px;
+    margin-bottom: -10px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: left;
+}
+
+.skill-card {
     background: #111;
-    padding: 20px;
+    padding: 25px 20px;
     border-radius: 15px;
+    outline: 1px solid rgba(128, 128, 128, 0.35);
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
+    width: 220px;
+    flex-shrink: 0;
 }
 
-.skill-card:hover,
-.project-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #00ff00;
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    outline: 1px solid #00ff00;
+}
+
+.skill-icon {
+    font-size: 36px;
+    color: gray;
+    margin-bottom: 12px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+    color: #00ff00;
+    transform: scale(1.15);
+}
+
+.skill-title {
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.skill-card:hover .skill-title {
+    color: #00ff00;
 }
 
 /* Projekty */
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 25px;
     width: 100%;
 }
 
+/* KARTA */
 .project-card {
     background: #111;
-    padding: 20px;
+    padding: 22px;
     border-radius: 15px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    outline: 1px solid rgba(128, 128, 128, 0.35);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
 }
 
 .project-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #00ff00;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    outline: 1px solid #00ff00;
 }
 
-.project-card a {
-    display: block;
-    margin-top: 10px;
+/* TYTUŁ */
+.project-title {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
     color: #00ff00;
-    text-decoration: none;
+}
+
+/* OPIS */
+.project-desc {
+    margin: 0 0 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #cccccc;
+}
+
+/* TECHNOLOGIE - boksy */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tech {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    background: #222;
+    border-radius: 6px;
+    color: gray;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+}
+
+.project-card:hover .tech {
+    background: #00ff00;
+    color: #111;
+    transform: scale(1.05);
 }
 
 /* Kontakt */
@@ -192,34 +302,13 @@ h2 {
     margin: 50px auto;
 }
 
-.contact-info {
-    width: 300px;
-    text-align: center;
-}
-
-.contact-info h2 {
-    color: #00ff00;
-    font-size: 24px;
-}
-
-.social-icons a {
-    color: white;
-    font-size: 20px;
-    margin-right: 10px;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #00aaff;
-}
-
 /* Formularz kontaktowy */
 .contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .contact-form input,
@@ -250,4 +339,27 @@ h2 {
 .contact-form button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #00ff00;
+}
+
+/* STOPKA */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 15px 30px;
+    border-top: 1px solid rgba(128, 128, 128, 0.35);
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: gray;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #00ff00;
 }
