@@ -302,6 +302,12 @@ h2 {
     margin: 50px auto;
 }
 
+/* Ikony */
+.contact-info a {
+    color: #ffffff;
+    font-size: 24px;
+}
+
 /* Formularz kontaktowy */
 .contact-form {
     display: flex;
