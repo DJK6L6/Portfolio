@@ -308,6 +308,10 @@ h2 {
     font-size: 24px;
 }
 
+.contact-info a:hover {
+    color: #00ff00;
+}
+
 /* Formularz kontaktowy */
 .contact-form {
     display: flex;
