@@ -1,0 +1,496 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #111723;
+    color: #ffffff;
+}
+
+/* Nagłówek */
+header {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px 30px;
+    position: fixed;
+    width: 80%;
+    max-width: 1100px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* Kontener nawigacji */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Menu nawigacyjne */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #00aaff;
+}
+
+/* Sekcja intro */
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: left;
+    padding: 50px;
+    background: radial-gradient(circle at top left, #003300, #0a0a0a);
+    gap: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.intro-content {
+    max-width: 600px;
+    margin-right: 50px;
+}
+
+.intro-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00ff00, #008800);
+    background-clip: text;
+    color: transparent;
+}
+
+.intro-content p {
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+/* Przycisk */
+.view-projects-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(90deg, #00ff00, #008800);
+    border-radius: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.view-projects-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ff00;
+}
+
+/* Zdjęcie w sekcji intro */
+.intro-image img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #00ff00;
+}
+
+/* Sekcje */
+.content-section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #00ff00;
+}
+
+/* O mnie */
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #00ff00;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.8;
+    text-align: left;
+    margin-bottom: 25px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Umiejętności */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.skills-container h2 {
+    margin-top: 50px;
+    margin-bottom: -10px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: left;
+}
+
+.skill-card {
+    background: #111;
+    padding: 25px 20px;
+    border-radius: 15px;
+    outline: 1px solid rgba(128, 128, 128, 0.35);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    outline: 1px solid #00ff00;
+}
+
+.skill-icon {
+    font-size: 36px;
+    color: gray;
+    margin-bottom: 12px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+    color: #00ff00;
+    transform: scale(1.15);
+}
+
+.skill-title {
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.skill-card:hover .skill-title {
+    color: #00ff00;
+}
+
+/* Projekty */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+/* KARTA */
+.project-card {
+    background: #111;
+    padding: 22px;
+    border-radius: 15px;
+    outline: 1px solid rgba(128, 128, 128, 0.35);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    outline: 1px solid #00ff00;
+}
+
+/* TYTUŁ */
+.project-title {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+    color: #00ff00;
+}
+
+/* OPIS */
+.project-desc {
+    margin: 0 0 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #cccccc;
+}
+
+/* TECHNOLOGIE - boksy */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tech {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    background: #222;
+    border-radius: 6px;
+    color: gray;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+}
+
+.project-card:hover .tech {
+    background: #00ff00;
+    color: #111;
+    transform: scale(1.05);
+}
+
+/* Kontakt */
+.contact-container {
+    display: flex;
+    gap: 50px;
+    background: #131720;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.2);
+    max-width: 800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+/* Ikony */
+.contact-info a {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.contact-info a:hover {
+    color: #00ff00;
+}
+
+/* Formularz kontaktowy */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: #131720;
+    color: white;
+    resize: none;
+    font-size: 16px;
+}
+
+/* Przycisk formularza */
+.contact-form button {
+    background: linear-gradient(90deg, #00ff00, #008800);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ff00;
+}
+
+/* STOPKA */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 15px 30px;
+    border-top: 1px solid rgba(128, 128, 128, 0.35);
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: gray;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #00ff00;
+}
+
+@media (max-width: 768px) {
+
+    /* Nagłówek */
+    header {
+        width: 85%;
+        padding: 12px 20px;
+        top: 10px;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    /* Sekcja intro */
+    #intro {
+        flex-direction: column;
+        height: auto;
+        padding: 120px 20px 60px;
+        text-align: center;
+    }
+
+    .intro-content {
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .intro-content h1 {
+        font-size: 32px;
+    }
+
+    .intro-content p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .intro-image img {
+        width: 250px;
+        margin-top: 30px;
+    }
+
+    /* Sekcje */
+    .content-section {
+        padding: 60px 20px;
+    }
+
+    .content-section h2 {
+        text-align: center;
+    }
+
+    /* Umiejętności */
+    .skills-container {
+        justify-content: center;
+    }
+
+    .skill-card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Projekty */
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Kontakt */
+    .contact-container {
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px 20px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 40px auto;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .contact-info p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .contact-info a {
+        font-size: 24px;
+    }
+
+    /* STOPKA */
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
