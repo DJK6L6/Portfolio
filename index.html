@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css" rel="stylesheet">
     <link rel="icon" href="icon/favicon.png" type="png">
+    <script src="js/lang.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,52 +16,67 @@
             <div class="nav-container">
                 <div class="logo">Jakub Hamerski</div>
                 <ul>
-                    <li><a href="#about">O mnie</a></li>
-                    <li><a href="#skills">Umiejętności</a></li>
-                    <li><a href="#projects">Projekty</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#about" data-i18n="nav.about">O mnie</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Umiejętności</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projekty</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
                 </ul>
+                <div class="lang-switch">
+                    <input type="checkbox" id="langToggle" />
+                    <label for="langToggle" class="toggle-label">
+                        <span class="lang pl">PL</span>
+                        <span class="lang en">EN</span>
+                        <div class="switch-ball"></div>
+                    </label>
+                </div>
             </div>
         </nav>
     </header>
 
     <section id="intro">
         <div class="intro-content">
-            <h1>Cześć, nazywam się Jakub!</h1>
-            <p>Jestem studentem informatyki z pasją do programowania w języku Java. Specjalizuję się w tworzeniu
+            <h1 data-i18n="intro.greeting">Cześć, nazywam się Jakub!</h1>
+            <p data-i18n="intro.description">
+                Jestem studentem informatyki z pasją do programowania w języku Java. Specjalizuję się w tworzeniu
                 aplikacji, które są nie tylko wydajne, ale i bezpieczne. Ciągle rozwijam swoje umiejętności i z chęcią
-                podejmuję nowe wyzwania, by stawać się coraz lepszym w tym, co robię.</p>
-            <a href="#projects" class="view-projects-btn">Zobacz moje projekty</a>
+                podejmuję nowe wyzwania, by stawać się coraz lepszym w tym, co robię.
+            </p>
+            <a href="#projects" class="view-projects-btn" data-i18n="intro.projects_btn">Zobacz moje projekty</a>
         </div>
         <div class="intro-image">
-            <img src="icon/profile.jpg" alt="Zdjęcie profilowe">
+            <img src="icon/profile.jpg" alt="Zdjęcie profilowe" data-i18n-alt="intro.profile_alt">
         </div>
     </section>
 
     <section id="about" class="content-section">
         <div class="about-content">
             <div class="about-text">
-                <h2>O mnie</h2>
-                <p>Cześć! Jestem 22-letnim studentem informatyki na Wyższej Szkole Zarządzania i Bankowości w Krakowie,
+                <h2 data-i18n="about.title">O mnie</h2>
+                <p data-i18n="about.p1">
+                    Cześć! Jestem 22-letnim studentem informatyki na Wyższej Szkole Zarządzania i Bankowości w Krakowie,
                     gdzie planuję ukończyć studia inżynierskie w 2026 roku. Mam pasję do tworzenia oprogramowania w
                     języku Java. Moim celem jest projektowanie aplikacji, które nie tylko działają efektywnie, ale także
-                    są bezpieczne i skalowalne.</p>
+                    są bezpieczne i skalowalne.
+                </p>
 
-                <p>Posiadam doświadczenie zdobyte dzięki realizacji własnych projektów, a także rozwijaniu swoich
+                <p data-i18n="about.p2">
+                    Posiadam doświadczenie zdobyte dzięki realizacji własnych projektów, a także rozwijaniu swoich
                     umiejętności w zakresie cyberbezpieczeństwa. Uważam, że każda aplikacja powinna być zaprojektowana z
                     myślą o bezpieczeństwie użytkowników oraz optymalnej wydajności, co stanowi podstawę mojej pracy.
                 </p>
 
-                <p>Moje podejście do programowania opiera się na nieustannym dążeniu do doskonałości. Uwielbiam
+                <p data-i18n="about.p3">
+                    Moje podejście do programowania opiera się na nieustannym dążeniu do doskonałości. Uwielbiam
                     rozwiązywać skomplikowane problemy techniczne i szukać innowacyjnych rozwiązań, które przynoszą
                     realne korzyści dla użytkowników. Potrafię pracować zarówno samodzielnie, jak i w zespole, co
-                    pozwala mi w pełni wykorzystać swoje umiejętności w różnych projektach.</p>
+                    pozwala mi w pełni wykorzystać swoje umiejętności w różnych projektach.
+                </p>
             </div>
         </div>
     </section>
 
     <section id="skills" class="content-section">
-        <h2>Umiejętności</h2>
+        <h2 data-i18n="skills.title">Umiejętności</h2>
         <div class="skills-container">
             <h2>Backend</h2>
             <div class="skill-card">
@@ -143,7 +159,7 @@
         </div>
 
         <div class="skills-container">
-            <h2>Aplikacje Mobilne</h2>
+            <h2 data-i18n="skills.mobile">Aplikacje Mobilne</h2>
             <div class="skill-card">
                 <i class="devicon-kotlin-plain skill-icon"></i>
                 <h3 class="skill-title">Kotlin</h3>
@@ -181,7 +197,7 @@
         </div>
 
         <div class="skills-container">
-            <h2>Uczenie Maszynowe i AI</h2>
+            <h2 data-i18n="skills.ai">Uczenie Maszynowe i AI</h2>
             <div class="skill-card">
                 <i class="devicon-tensorflow-original skill-icon"></i>
                 <h3 class="skill-title">TensorFlow</h3>
@@ -203,7 +219,7 @@
         </div>
 
         <div class="skills-container">
-            <h2>Testowanie i DevOps</h2>
+            <h2 data-i18n="skills.devops">Testowanie i DevOps</h2>
             <div class="skill-card">
                 <i class="devicon-junit-plain skill-icon"></i>
                 <h3 class="skill-title">JUnit</h3>
@@ -237,11 +253,12 @@
     </section>
 
     <section id="projects" class="content-section">
-        <h2>Projekty</h2>
+        <h2 data-i18n="projects.title">Projekty</h2>
         <div class="projects-container">
             <div class="project-card">
-                <h3 class="project-title">Mobilna Aplikacja do Wynajmu Samochodów</h3>
-                <p class="project-desc">
+                <h3 class="project-title" data-i18n="projects.carRental.title">Mobilna Aplikacja do Wynajmu Samochodów
+                </h3>
+                <p class="project-desc" data-i18n="projects.carRental.desc">
                     Mobilna aplikacja umożliwiająca wynajem samochodów, obsługę użytkowników
                     oraz płatności online.
                 </p>
@@ -258,8 +275,10 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Backend Mobilnej Aplikacji do Wynajmu Samochodów</h3>
-                <p class="project-desc">
+                <h3 class="project-title" data-i18n="projects.carRentalBackend.title">
+                    Backend Mobilnej Aplikacji do Wynajmu Samochodów
+                </h3>
+                <p class="project-desc" data-i18n="projects.carRentalBackend.desc">
                     Backend klient-serwer zarządzający logiką biznesową, bazą danych i bezpieczeństwem użytkowników.
                 </p>
                 <div class="tech-stack">
@@ -278,10 +297,11 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Algorytm Hashujący z Nonce</h3>
-                <p class="project-desc">
-                    Generowanie transakcji oraz wyszukiwanie nonce w celu uzyskania hasha
-                    zakończonego pięcioma zerami.
+                <h3 class="project-title" data-i18n="projects.hashAlgorithm.title">
+                    Algorytm Hashujący z Nonce
+                </h3>
+                <p class="project-desc" data-i18n="projects.hashAlgorithm.desc">
+                    Generowanie transakcji oraz wyszukiwanie nonce w celu uzyskania hasha zakończonego pięcioma zerami.
                 </p>
                 <div class="tech-stack">
                     <span class="tech">Java</span>
@@ -291,10 +311,12 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Sklep Terminalowy</h3>
-                <p class="project-desc">
-                    Aplikacja konsolowa z rejestracją użytkowników, koszykiem oraz realizacją
-                    zamówień przy użyciu bazy danych.
+                <h3 class="project-title" data-i18n="projects.terminalStore.title">
+                    Sklep Terminalowy
+                </h3>
+                <p class="project-desc" data-i18n="projects.terminalStore.desc">
+                    Aplikacja konsolowa z rejestracją użytkowników, koszykiem oraz realizacją zamówień przy użyciu bazy
+                    danych.
                 </p>
                 <div class="tech-stack">
                     <span class="tech">Java</span>
@@ -308,10 +330,12 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Programowanie Współbieżne w Javie</h3>
-                <p class="project-desc">
-                    System rozwiązujący problemy synchronizacji wątków przy użyciu semaforów
-                    oraz mechanizmów blokowania.
+                <h3 class="project-title" data-i18n="projects.concurrentJava.title">
+                    Programowanie Współbieżne w Javie
+                </h3>
+                <p class="project-desc" data-i18n="projects.concurrentJava.desc">
+                    System rozwiązujący problemy synchronizacji wątków przy użyciu semaforów oraz mechanizmów
+                    blokowania.
                 </p>
                 <div class="tech-stack">
                     <span class="tech">Java</span>
@@ -323,10 +347,11 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Zaawansowane Operacje na Kolekcjach</h3>
-                <p class="project-desc">
-                    Przetwarzanie dużych zbiorów danych z wykorzystaniem strumieni
-                    oraz funkcji agregujących.
+                <h3 class="project-title" data-i18n="projects.advancedCollections.title">
+                    Zaawansowane Operacje na Kolekcjach
+                </h3>
+                <p class="project-desc" data-i18n="projects.advancedCollections.desc">
+                    Przetwarzanie dużych zbiorów danych z wykorzystaniem strumieni oraz funkcji agregujących.
                 </p>
                 <div class="tech-stack">
                     <span class="tech">Java</span>
@@ -337,8 +362,10 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Problem Czytelników i Pisarzy w Javie</h3>
-                <p class="project-desc">
+                <h3 class="project-title" data-i18n="projects.readersWriters.title">
+                    Problem Czytelników i Pisarzy w Javie
+                </h3>
+                <p class="project-desc" data-i18n="projects.readersWriters.desc">
                     Implementacja klasycznego problemu synchronizacji wątków z użyciem semaforów i zmiennych
                     warunkowych.
                     System zapewnia równoczesny dostęp wielu czytelników oraz pojedynczy dostęp pisarzy, eliminując
@@ -354,8 +381,10 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Problem Producent-Konsument w Javie</h3>
-                <p class="project-desc">
+                <h3 class="project-title" data-i18n="projects.producerConsumer.title">
+                    Problem Producent-Konsument w Javie
+                </h3>
+                <p class="project-desc" data-i18n="projects.producerConsumer.desc">
                     Implementacja klasycznego problemu synchronizacji wątków z użyciem monitorów i mechanizmu
                     oczekiwania warunkowego.
                     System zapewnia prawidłową wymianę danych między producentami a konsumentami, eliminując kolizje i
@@ -371,9 +400,13 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Spring Boot – REST API dla osób (Builder Pattern)</h3>
-                <p class="project-desc"> Tworzenie prostego API REST dla zarządzania listą osób. Projekt pokazuje użycie
-                    wzorca Builder do tworzenia obiektów oraz testów jednostkowych z użyciem Spring Test i Mockito. </p>
+                <h3 class="project-title" data-i18n="projects.restApiBuilder.title">
+                    Spring Boot – REST API dla osób (Builder Pattern)
+                </h3>
+                <p class="project-desc" data-i18n="projects.restApiBuilder.desc">
+                    Tworzenie prostego API REST dla zarządzania listą osób. Projekt pokazuje użycie wzorca Builder do
+                    tworzenia obiektów oraz testów jednostkowych z użyciem Spring Test i Mockito.
+                </p>
                 <div class="tech-stack">
                     <span class="tech">Java</span>
                     <span class="tech">Spring Boot</span>
@@ -383,8 +416,10 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Zaawansowane Struktury Danych Współbieżnych</h3>
-                <p class="project-desc">
+                <h3 class="project-title" data-i18n="projects.concurrentDataStructures.title">
+                    Zaawansowane Struktury Danych Współbieżnych
+                </h3>
+                <p class="project-desc" data-i18n="projects.concurrentDataStructures.desc">
                     Implementacja list współbieżnych z drobnoziarnistym blokowaniem węzłów oraz testy wydajności w
                     środowisku wielowątkowym.
                     Porównanie efektywności podejścia z jednym zamkiem globalnym i blokowaniem drobnoziarnistym.
@@ -399,8 +434,10 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Testowanie Wydajności Współbieżnej – Problem Pięciu Filozofów</h3>
-                <p class="project-desc">
+                <h3 class="project-title" data-i18n="projects.fivePhilosophers.title">
+                    Testowanie Wydajności Współbieżnej – Problem Pięciu Filozofów
+                </h3>
+                <p class="project-desc" data-i18n="projects.fivePhilosophers.desc">
                     Implementacja klasycznego problemu Pięciu Filozofów z użyciem różnych mechanizmów synchronizacji w
                     Javie: synchronized, semafory, ReentrantLock oraz lokaj. Analiza wpływu wybranego podejścia na
                     wydajność i bezpieczeństwo współbieżne.
@@ -415,8 +452,10 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">System Rejestracji Pacjentów na Badanie</h3>
-                <p class="project-desc">
+                <h3 class="project-title" data-i18n="projects.patientRegistration.title">
+                    System Rejestracji Pacjentów na Badanie
+                </h3>
+                <p class="project-desc" data-i18n="projects.patientRegistration.desc">
                     Aplikacja umożliwiająca rejestrację pacjentów na badanie. Zawiera formularz do wprowadzania danych
                     pacjenta oraz endpointy do wyświetlania pacjentów zarejestrowanych na dany termin.
                 </p>
@@ -430,8 +469,10 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Robot z wykorzystaniem IoC (Inversion of Control)</h3>
-                <p class="project-desc">
+                <h3 class="project-title" data-i18n="projects.robotIoC.title">
+                    Robot z wykorzystaniem IoC (Inversion of Control)
+                </h3>
+                <p class="project-desc" data-i18n="projects.robotIoC.desc">
                     Program sterujący robotem, który wykorzystuje IoC w Springu. Składa się z klasy głównej `Robot`,
                     która współpracuje z komponentami takimi jak `CzujnikRuchu` i `SilnikGlowny`. Program umożliwia
                     sterowanie robotem oraz sprawdzanie przeszkód.
@@ -446,8 +487,10 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Docker + DevOps + IaC (Flask + Nginx + PostgreSQL)</h3>
-                <p class="project-desc">
+                <h3 class="project-title" data-i18n="projects.dockerDevOps.title">
+                    Docker + DevOps + IaC (Flask + Nginx + PostgreSQL)
+                </h3>
+                <p class="project-desc" data-i18n="projects.dockerDevOps.desc">
                     Środowisko webowe w Dockerze z Flask, Nginx i PostgreSQL, wieloetapowym Dockerfile, seedowaniem
                     bazy, testami Pytest oraz CI/CD w GitHub Actions. Azure użyty do minimalnej konfiguracji IaC.
                 </p>
@@ -465,8 +508,10 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Rozpoznawanie Komend Głosowych</h3>
-                <p class="project-desc">
+                <h3 class="project-title" data-i18n="projects.voiceCommands.title">
+                    Rozpoznawanie Komend Głosowych
+                </h3>
+                <p class="project-desc" data-i18n="projects.voiceCommands.desc">
                     Wykorzystanie sieci neuronowej (CNN) do rozpoznawania komend głosowych na podstawie cech MFCC.
                 </p>
                 <div class="tech-stack">
@@ -477,8 +522,10 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Szachy z Algorytmem Genetycznym</h3>
-                <p class="project-desc">
+                <h3 class="project-title" data-i18n="projects.chessGenetic.title">
+                    Szachy z Algorytmem Genetycznym
+                </h3>
+                <p class="project-desc" data-i18n="projects.chessGenetic.desc">
                     Gra w szachy z wykorzystaniem algorytmu MiniMax oraz optymalizacji wag materiałowych za pomocą
                     algorytmu genetycznego (DEAP).
                 </p>
@@ -491,8 +538,10 @@
             </div>
 
             <div class="project-card">
-                <h3 class="project-title">Space Invaders</h3>
-                <p class="project-desc">
+                <h3 class="project-title" data-i18n="projects.spaceInvaders.title">
+                    Space Invaders
+                </h3>
+                <p class="project-desc" data-i18n="projects.spaceInvaders.desc">
                     Klasyczna gra "Space Invaders" stworzona przy użyciu JavaScript i Three.js. Gra oferuje różne
                     poziomy trudności i możliwość zmiany kamery, a także automatyczne strzelanie.
                 </p>
@@ -507,18 +556,20 @@
     </section>
 
     <section id="contact" class="content-section">
-        <h2>Kontakt</h2>
+        <h2 data-i18n="contact.title">Kontakt</h2>
         <div class="contact-container">
             <div class="contact-info">
                 <p><i class="fas fa-envelope"></i> kuba.hamerski@gmail.com</p>
                 <a href="https://github.com/DJK6L6"><i class="fab fa-github"></i></a>
             </div>
             <div class="contact-form">
-                <input type="text" id="name" name="name" placeholder="Imię" required autocomplete="name">
-                <input type="email" id="email" name="email" placeholder="Email" required autocomplete="email">
-                <textarea id="message" name="message" placeholder="Wiadomość" rows="5" required
-                    autocomplete="off"></textarea>
-                <button type="submit">Wyślij</button>
+                <input type="text" id="name" name="name" placeholder="Imię" data-i18n-placeholder="contact.form.name"
+                    required autocomplete="name">
+                <input type="email" id="email" name="email" placeholder="Email"
+                    data-i18n-placeholder="contact.form.email" required autocomplete="email">
+                <textarea id="message" name="message" placeholder="Wiadomość"
+                    data-i18n-placeholder="contact.form.message" rows="5" required autocomplete="off"></textarea>
+                <button type="submit" data-i18n="contact.form.submit">Wyślij</button>
             </div>
         </div>
     </section>

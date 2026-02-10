@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "about": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "intro": {
+    "greeting": "Hi, my name is Jakub!",
+    "description": "I am a computer science student with a passion for Java programming. I specialize in creating applications that are not only efficient but also secure. I continuously develop my skills and eagerly take on new challenges to become better at what I do.",
+    "projects_btn": "See my projects",
+    "profile_alt": "Profile picture"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "Hi! I am a 22-year-old Computer Science student at the Wyższa Szkoła Zarządzania i Bankowości in Krakow, planning to complete my engineering studies in 2026. I am passionate about software development in Java. My goal is to design applications that are not only efficient but also secure and scalable.",
+    "p2": "I have experience gained through my own projects, as well as developing my skills in cybersecurity. I believe that every application should be designed with user safety and optimal performance in mind, which forms the basis of my work.",
+    "p3": "My approach to programming is based on a continuous pursuit of excellence. I love solving complex technical problems and seeking innovative solutions that bring real benefits to users. I can work both independently and in a team, allowing me to fully utilize my skills in various projects."
+  },
+  "skills": {
+    "title": "Skills",
+    "mobile": "Mobile Applications",
+    "ai": "Machine Learning & AI",
+    "devops": "Testing & DevOps"
+  },
+  "projects": {
+    "title": "Projects",
+    "carRental": {
+      "title": "Mobile Car Rental Application",
+      "desc": "Mobile application enabling car rentals, user management, and online payments."
+    },
+    "carRentalBackend": {
+      "title": "Mobile Car Rental Application Backend",
+      "desc": "Client-server backend managing business logic, database, and user security."
+    },
+    "hashAlgorithm": {
+      "title": "Hash Algorithm with Nonce",
+      "desc": "Generating transactions and searching for a nonce to obtain a hash ending with five zeros."
+    },
+    "terminalStore": {
+      "title": "Terminal Store",
+      "desc": "Console application with user registration, shopping cart, and order processing using a database."
+    },
+    "concurrentJava": {
+      "title": "Concurrent Programming in Java",
+      "desc": "System solving thread synchronization problems using semaphores and blocking mechanisms."
+    },
+    "advancedCollections": {
+      "title": "Advanced Collection Operations",
+      "desc": "Processing large datasets using streams and aggregation functions."
+    },
+    "readersWriters": {
+      "title": "Readers and Writers Problem in Java",
+      "desc": "Implementation of the classic thread synchronization problem using semaphores and condition variables. The system allows multiple readers to access simultaneously and single writers, preventing deadlocks."
+    },
+    "producerConsumer": {
+      "title": "Producer-Consumer Problem in Java",
+      "desc": "Implementation of the classic thread synchronization problem using monitors and conditional waiting. The system ensures proper data exchange between producers and consumers, preventing collisions and deadlocks."
+    },
+    "restApiBuilder": {
+      "title": "Spring Boot – REST API for People (Builder Pattern)",
+      "desc": "Creating a simple REST API for managing a list of people. The project demonstrates the use of the Builder pattern for object creation and unit testing using Spring Test and Mockito."
+    },
+    "concurrentDataStructures": {
+      "title": "Advanced Concurrent Data Structures",
+      "desc": "Implementation of concurrent lists with fine-grained node locking and performance tests in a multithreaded environment. Comparison of the efficiency between a single global lock and fine-grained locking."
+    },
+    "fivePhilosophers": {
+      "title": "Concurrent Performance Testing – Dining Philosophers Problem",
+      "desc": "Implementation of the classic Dining Philosophers problem using various synchronization mechanisms in Java: synchronized, semaphores, ReentrantLock, and waiter. Analysis of the selected approach’s impact on concurrency performance and safety."
+    },
+    "patientRegistration": {
+      "title": "Patient Registration System for Medical Examination",
+      "desc": "Application that allows patient registration for medical examinations. Includes a form for entering patient data and endpoints to display patients registered for a given appointment."
+    },
+    "robotIoC": {
+      "title": "Robot Using IoC (Inversion of Control)",
+      "desc": "Program controlling a robot using IoC in Spring. It consists of the main `Robot` class, which interacts with components such as `MotionSensor` and `MainMotor`. The program allows robot control and obstacle detection."
+    },
+    "dockerDevOps": {
+      "title": "Docker + DevOps + IaC (Flask + Nginx + PostgreSQL)",
+      "desc": "Web environment in Docker with Flask, Nginx, and PostgreSQL, multi-stage Dockerfile, database seeding, Pytest tests, and CI/CD in GitHub Actions. Azure used for minimal IaC setup."
+    },
+    "voiceCommands": {
+      "title": "Voice Command Recognition",
+      "desc": "Using a neural network (CNN) to recognize voice commands based on MFCC features."
+    },
+    "chessGenetic": {
+      "title": "Chess with Genetic Algorithm",
+      "desc": "Chess game using the MiniMax algorithm and material weight optimization with a genetic algorithm (DEAP)."
+    },
+    "spaceInvaders": {
+      "title": "Space Invaders",
+      "desc": "Classic \"Space Invaders\" game built with JavaScript and Three.js. The game features different difficulty levels, camera switching, and automatic shooting."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send"
+    }
+  }
+}

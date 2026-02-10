@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "about": "O mnie",
+    "skills": "Umiejętności",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "intro": {
+    "greeting": "Cześć, nazywam się Jakub!",
+    "description": "Jestem studentem informatyki z pasją do programowania w języku Java. Specjalizuję się w tworzeniu aplikacji, które są nie tylko wydajne, ale i bezpieczne. Ciągle rozwijam swoje umiejętności i z chęcią podejmuję nowe wyzwania, by stawać się coraz lepszym w tym, co robię.",
+    "projects_btn": "Zobacz moje projekty",
+    "profile_alt": "Zdjęcie profilowe"
+  },
+  "about": {
+    "title": "O mnie",
+    "p1": "Cześć! Jestem 22-letnim studentem informatyki na Wyższej Szkole Zarządzania i Bankowości w Krakowie, gdzie planuję ukończyć studia inżynierskie w 2026 roku. Mam pasję do tworzenia oprogramowania w języku Java. Moim celem jest projektowanie aplikacji, które nie tylko działają efektywnie, ale także są bezpieczne i skalowalne.",
+    "p2": "Posiadam doświadczenie zdobyte dzięki realizacji własnych projektów, a także rozwijaniu swoich umiejętności w zakresie cyberbezpieczeństwa. Uważam, że każda aplikacja powinna być zaprojektowana z myślą o bezpieczeństwie użytkowników oraz optymalnej wydajności, co stanowi podstawę mojej pracy.",
+    "p3": "Moje podejście do programowania opiera się na nieustannym dążeniu do doskonałości. Uwielbiam rozwiązywać skomplikowane problemy techniczne i szukać innowacyjnych rozwiązań, które przynoszą realne korzyści dla użytkowników. Potrafię pracować zarówno samodzielnie, jak i w zespole, co pozwala mi w pełni wykorzystać swoje umiejętności w różnych projektach."
+  },
+  "skills": {
+    "title": "Umiejętności",
+    "mobile": "Aplikacje Mobilne",
+    "ai": "Uczenie Maszynowe i AI",
+    "devops": "Testowanie i DevOps"
+  },
+  "projects": {
+    "title": "Projekty",
+    "carRental": {
+      "title": "Mobilna Aplikacja do Wynajmu Samochodów",
+      "desc": "Mobilna aplikacja umożliwiająca wynajem samochodów, obsługę użytkowników oraz płatności online."
+    },
+    "carRentalBackend": {
+      "title": "Backend Mobilnej Aplikacji do Wynajmu Samochodów",
+      "desc": "Backend klient-serwer zarządzający logiką biznesową, bazą danych i bezpieczeństwem użytkowników."
+    },
+    "hashAlgorithm": {
+      "title": "Algorytm Hashujący z Nonce",
+      "desc": "Generowanie transakcji oraz wyszukiwanie nonce w celu uzyskania hasha zakończonego pięcioma zerami."
+    },
+    "terminalStore": {
+      "title": "Sklep Terminalowy",
+      "desc": "Aplikacja konsolowa z rejestracją użytkowników, koszykiem oraz realizacją zamówień przy użyciu bazy danych."
+    },
+    "concurrentJava": {
+      "title": "Programowanie Współbieżne w Javie",
+      "desc": "System rozwiązujący problemy synchronizacji wątków przy użyciu semaforów oraz mechanizmów blokowania."
+    },
+    "advancedCollections": {
+      "title": "Zaawansowane Operacje na Kolekcjach",
+      "desc": "Przetwarzanie dużych zbiorów danych z wykorzystaniem strumieni oraz funkcji agregujących."
+    },
+    "readersWriters": {
+      "title": "Problem Czytelników i Pisarzy w Javie",
+      "desc": "Implementacja klasycznego problemu synchronizacji wątków z użyciem semaforów i zmiennych warunkowych. System zapewnia równoczesny dostęp wielu czytelników oraz pojedynczy dostęp pisarzy, eliminując zakleszczenia."
+    },
+    "producerConsumer": {
+      "title": "Problem Producent-Konsument w Javie",
+      "desc": "Implementacja klasycznego problemu synchronizacji wątków z użyciem monitorów i mechanizmu oczekiwania warunkowego. System zapewnia prawidłową wymianę danych między producentami a konsumentami, eliminując kolizje i zakleszczenia."
+    },
+    "restApiBuilder": {
+      "title": "Spring Boot – REST API dla osób (Builder Pattern)",
+      "desc": "Tworzenie prostego API REST dla zarządzania listą osób. Projekt pokazuje użycie wzorca Builder do tworzenia obiektów oraz testów jednostkowych z użyciem Spring Test i Mockito."
+    },
+    "concurrentDataStructures": {
+      "title": "Zaawansowane Struktury Danych Współbieżnych",
+      "desc": "Implementacja list współbieżnych z drobnoziarnistym blokowaniem węzłów oraz testy wydajności w środowisku wielowątkowym. Porównanie efektywności podejścia z jednym zamkiem globalnym i blokowaniem drobnoziarnistym."
+    },
+    "fivePhilosophers": {
+      "title": "Testowanie Wydajności Współbieżnej – Problem Pięciu Filozofów",
+      "desc": "Implementacja klasycznego problemu Pięciu Filozofów z użyciem różnych mechanizmów synchronizacji w Javie: synchronized, semafory, ReentrantLock oraz lokaj. Analiza wpływu wybranego podejścia na wydajność i bezpieczeństwo współbieżne."
+    },
+    "patientRegistration": {
+      "title": "System Rejestracji Pacjentów na Badanie",
+      "desc": "Aplikacja umożliwiająca rejestrację pacjentów na badanie. Zawiera formularz do wprowadzania danych pacjenta oraz endpointy do wyświetlania pacjentów zarejestrowanych na dany termin."
+    },
+    "robotIoC": {
+      "title": "Robot z wykorzystaniem IoC (Inversion of Control)",
+      "desc": "Program sterujący robotem, który wykorzystuje IoC w Springu. Składa się z klasy głównej `Robot`, która współpracuje z komponentami takimi jak `CzujnikRuchu` i `SilnikGlowny`. Program umożliwia sterowanie robotem oraz sprawdzanie przeszkód."
+    },
+    "dockerDevOps": {
+      "title": "Docker + DevOps + IaC (Flask + Nginx + PostgreSQL)",
+      "desc": "Środowisko webowe w Dockerze z Flask, Nginx i PostgreSQL, wieloetapowym Dockerfile, seedowaniem bazy, testami Pytest oraz CI/CD w GitHub Actions. Azure użyty do minimalnej konfiguracji IaC."
+    },
+    "voiceCommands": {
+      "title": "Rozpoznawanie Komend Głosowych",
+      "desc": "Wykorzystanie sieci neuronowej (CNN) do rozpoznawania komend głosowych na podstawie cech MFCC."
+    },
+    "chessGenetic": {
+      "title": "Szachy z Algorytmem Genetycznym",
+      "desc": "Gra w szachy z wykorzystaniem algorytmu MiniMax oraz optymalizacji wag materiałowych za pomocą algorytmu genetycznego (DEAP)."
+    },
+    "spaceInvaders": {
+      "title": "Space Invaders",
+      "desc": "Klasyczna gra \"Space Invaders\" stworzona przy użyciu JavaScript i Three.js. Gra oferuje różne poziomy trudności i możliwość zmiany kamery, a także automatyczne strzelanie."
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "form": {
+      "name": "Imię",
+      "email": "Email",
+      "message": "Wiadomość",
+      "submit": "Wyślij"
+    }
+  }
+}
