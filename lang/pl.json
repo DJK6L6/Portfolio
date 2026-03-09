@@ -7,13 +7,13 @@
   },
   "intro": {
     "greeting": "Cześć, nazywam się Jakub!",
-    "description": "Jestem studentem informatyki z pasją do programowania w języku Java. Specjalizuję się w tworzeniu aplikacji, które są nie tylko wydajne, ale i bezpieczne. Ciągle rozwijam swoje umiejętności i z chęcią podejmuję nowe wyzwania, by stawać się coraz lepszym w tym, co robię.",
+    "description": "Jestem absolwentem informatyki z pasją do programowania w języku Java. Specjalizuję się w tworzeniu aplikacji, które są nie tylko wydajne, ale także bezpieczne i skalowalne. Nieustannie rozwijam swoje umiejętności i chętnie podejmuję nowe wyzwania, aby stawać się coraz lepszym programistą.",
     "projects_btn": "Zobacz moje projekty",
     "profile_alt": "Zdjęcie profilowe"
   },
   "about": {
     "title": "O mnie",
-    "p1": "Cześć! Jestem 22-letnim studentem informatyki na Wyższej Szkole Zarządzania i Bankowości w Krakowie, gdzie planuję ukończyć studia inżynierskie w 2026 roku. Mam pasję do tworzenia oprogramowania w języku Java. Moim celem jest projektowanie aplikacji, które nie tylko działają efektywnie, ale także są bezpieczne i skalowalne.",
+    "p1": "Cześć! Jestem 22-letnim absolwentem informatyki na Wyższej Szkole Zarządzania i Bankowości w Krakowie, gdzie ukończyłem studia inżynierskie w 2026 roku, uzyskując tytuł inżyniera. Mam pasję do tworzenia oprogramowania w języku Java. Moim celem jest projektowanie aplikacji, które nie tylko działają efektywnie, ale także są bezpieczne i skalowalne.",
     "p2": "Posiadam doświadczenie zdobyte dzięki realizacji własnych projektów, a także rozwijaniu swoich umiejętności w zakresie cyberbezpieczeństwa. Uważam, że każda aplikacja powinna być zaprojektowana z myślą o bezpieczeństwie użytkowników oraz optymalnej wydajności, co stanowi podstawę mojej pracy.",
     "p3": "Moje podejście do programowania opiera się na nieustannym dążeniu do doskonałości. Uwielbiam rozwiązywać skomplikowane problemy techniczne i szukać innowacyjnych rozwiązań, które przynoszą realne korzyści dla użytkowników. Potrafię pracować zarówno samodzielnie, jak i w zespole, co pozwala mi w pełni wykorzystać swoje umiejętności w różnych projektach."
   },

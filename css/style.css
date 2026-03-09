@@ -483,6 +483,12 @@ h2 {
         font-size: 14px;
     }
 
+    /* Kontener przycisku zmiany języka */
+    .lang-switch {
+        position: absolute;
+        right: 20px;
+    }
+
     /* Sekcja intro */
     #intro {
         flex-direction: column;

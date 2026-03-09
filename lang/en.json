@@ -7,13 +7,13 @@
   },
   "intro": {
     "greeting": "Hi, my name is Jakub!",
-    "description": "I am a computer science student with a passion for Java programming. I specialize in creating applications that are not only efficient but also secure. I continuously develop my skills and eagerly take on new challenges to become better at what I do.",
+    "description": "I am a Computer Science graduate with a passion for Java programming. I specialize in developing applications that are not only efficient but also secure and scalable. I continuously improve my skills and eagerly take on new challenges to become a better developer.",
     "projects_btn": "See my projects",
     "profile_alt": "Profile picture"
   },
   "about": {
     "title": "About Me",
-    "p1": "Hi! I am a 22-year-old Computer Science student at the Wyższa Szkoła Zarządzania i Bankowości in Krakow, planning to complete my engineering studies in 2026. I am passionate about software development in Java. My goal is to design applications that are not only efficient but also secure and scalable.",
+    "p1": "Hello! I am a 22-year-old graduate of Computer Science from the University of Management and Banking in Kraków, where I completed my engineering degree in 2026 and obtained the title of Engineer. I have a passion for developing software in Java. My goal is to design applications that are not only efficient but also secure and scalable.",
     "p2": "I have experience gained through my own projects, as well as developing my skills in cybersecurity. I believe that every application should be designed with user safety and optimal performance in mind, which forms the basis of my work.",
     "p3": "My approach to programming is based on a continuous pursuit of excellence. I love solving complex technical problems and seeking innovative solutions that bring real benefits to users. I can work both independently and in a team, allowing me to fully utilize my skills in various projects."
   },
