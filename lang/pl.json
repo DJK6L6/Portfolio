@@ -94,9 +94,13 @@
       "desc": "Klasyczna gra \"Space Invaders\" stworzona przy użyciu JavaScript i Three.js. Gra oferuje różne poziomy trudności i możliwość zmiany kamery, a także automatyczne strzelanie."
     }
   },
+  "_notes": {
+    "contact.form.disabled": "Do usunięcia w przyszłości"
+  },
   "contact": {
     "title": "Kontakt",
     "form": {
+      "disabled": "Formularz jest obecnie wyłączony",
       "name": "Imię",
       "email": "Email",
       "message": "Wiadomość",

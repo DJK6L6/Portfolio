@@ -562,14 +562,21 @@
                 <p><i class="fas fa-envelope"></i> kuba.hamerski@gmail.com</p>
                 <a href="https://github.com/DJK6L6"><i class="fab fa-github"></i></a>
             </div>
-            <div class="contact-form">
+            <div class="contact-form disabled-form">
+
+                <!-- NOTE: To be removed in the future -->
+                <div class="tooltip" data-i18n="contact.form.disabled">
+                    Formularz jest obecnie wyłączony
+                </div>
+
                 <input type="text" id="name" name="name" placeholder="Imię" data-i18n-placeholder="contact.form.name"
-                    required autocomplete="name">
+                    required autocomplete="name" disabled>
                 <input type="email" id="email" name="email" placeholder="Email"
-                    data-i18n-placeholder="contact.form.email" required autocomplete="email">
+                    data-i18n-placeholder="contact.form.email" required autocomplete="email" disabled>
                 <textarea id="message" name="message" placeholder="Wiadomość"
-                    data-i18n-placeholder="contact.form.message" rows="5" required autocomplete="off"></textarea>
-                <button type="submit" data-i18n="contact.form.submit">Wyślij</button>
+                    data-i18n-placeholder="contact.form.message" rows="5" required autocomplete="off"
+                    disabled></textarea>
+                <button type="submit" data-i18n="contact.form.submit" disabled>Wyślij</button>
             </div>
         </div>
     </section>

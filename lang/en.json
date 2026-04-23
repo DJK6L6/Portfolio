@@ -94,9 +94,13 @@
       "desc": "Classic \"Space Invaders\" game built with JavaScript and Three.js. The game features different difficulty levels, camera switching, and automatic shooting."
     }
   },
+  "_notes": {
+    "contact.form.disabled": "To be removed in the future"
+  },
   "contact": {
     "title": "Contact",
     "form": {
+      "disabled": "The contact form is currently disabled",
       "name": "Name",
       "email": "Email",
       "message": "Message",
